@@ -3,7 +3,7 @@
 
 body{
     max-width: 1440px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 /*Common Shared*/
@@ -20,6 +20,7 @@ body{
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  font-size: 1.4rem;
 }
 
 .primary-text-color{
@@ -31,16 +32,32 @@ body{
 .display-flex{
     display: flex;
 }
+.btn{
+    background-color: #E95A08;
+    width: 100%;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#b84402;
+}
 /*Header*/
 /*Navbar*/
+header{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
 nav{
     
     justify-content: space-between;
     align-items: center;
 }
 .navbar ul{
-    width: 400px;
-    justify-content:space-between
+    width: 500px;
+    font-size: 1rem;
+    justify-content:space-between;
+    align-items: center;
 }
 nav li{
     list-style: none;
@@ -56,10 +73,45 @@ nav li{
     font-size: 4rem;
 }
 .banner{
-    height: 250px;
     justify-content: space-between;
     margin-top: 150px;
 }
 .banner-des{
     font-size: 1.4rem;
+}
+
+/*Main*/
+main section{
+    margin: 30px 0;
+}
+/*----OurPlant---*/
+.plant-title{
+    font-size: 3rem;
+}
+.plant-info{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card-item{
+    border: none;
+    width: 270px;
+    height: 480px;
+    margin-bottom: 30px;
+
+}
+.card-item img{
+    width: 100%;
+    
+}
+.price{
+
+}
+/*Small Device*/
+@media screen {
+    
 }
