@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    max-width: 1440px;
+    margin: 20px auto;
+}
+
+/*Common Shared*/
+.title {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.paragraph {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.primary-text-color{
+    color: #E95A08;
+}
+.secondary-text-color{
+    color: rgba(0, 0, 0, 0.5);
+}
+.display-flex{
+    display: flex;
+}
+/*Header*/
+/*Navbar*/
+nav{
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    width: 400px;
+    justify-content:space-between
+}
+nav li{
+    list-style: none;
+}
+.home{
+    font-weight: 800;
+}
+.cart{
+    align-items: center;
+}
+/*Banner*/
+.banner-title{
+    font-size: 4rem;
+}
+.banner{
+    height: 250px;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.banner-des{
+    font-size: 1.4rem;
+}
