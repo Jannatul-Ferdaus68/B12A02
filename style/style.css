@@ -170,7 +170,7 @@ nav li{
     color: white;
 }
 .join-form button{
-    width: 130px;
+    width: 160px;
 }
 .join-form input[type="email"]{
     padding: 0 20px;
@@ -178,6 +178,37 @@ nav li{
     height: 46px;
     border: 1px solid white;
 }
+
+/*--- Footer*/
+footer{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 70%;
+    margin: 100px auto;
+}
+footer a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.manu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.twitter{
+    margin-top: 9px;
+    margin-left: 3px;
+}
+
+
 
 /*Small Device*/
 @media screen {
