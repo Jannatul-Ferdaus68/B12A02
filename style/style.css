@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+body{
+    margin: 0;
+    padding: 0;
+}
 .body-section{
     max-width: 70%;
     margin: 150px auto;
@@ -51,7 +55,8 @@
 /*Header*/
 /*Navbar*/
 header{
-    margin-top: 20px;
+    max-width: 70%;
+    margin: 20px auto;
 }
 nav{
     
@@ -147,8 +152,59 @@ nav li{
 }
 .deals{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1.8fr;
+    column-gap: 28px;
 }
+
+.div1{
+    background-image: url("../assets/deal-bloom.png");
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    border-radius: 5%;
+}
+.div2{
+    background-image: url("../assets/deal-ana.png");
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    border-radius: 5%;
+}
+.div3{
+    background-image: url("../assets/deal-zabo.png");
+    background-size: cover;
+    height: 423px;
+    width: 100%;
+    border-radius: 5%;
+}
+.color-fade{
+    background-color:rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+}
+.deals>div h3{
+    margin: 0;
+    font-size: 1.3rem;
+}
+.deals>div a{
+    font-size: 1rem;
+    color: white;
+}
+
+.first-2{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.deal-item{
+    color: white;
+    text-align: center;
+}
+
 /*--- Join ---*/
 .join{
     background-image: url("../assets/news-letter-bg.png");
