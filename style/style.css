@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-body{
+.body-section{
     max-width: 70%;
-    margin: 0 auto;
+    margin: 150px auto;
 }
 
 /*Common Shared*/
@@ -39,11 +39,13 @@ body{
     color: white;
     font-size: 1rem;
     font-weight: 550;
-    border: none;
+    border: 1px solid #E95A08;
+    border-radius: 1%;
     cursor: pointer;
 }
 .btn:hover{
     background-color:#b84402;
+    border: 1px solid #b84402;
 }
 
 /*Header*/
@@ -85,9 +87,6 @@ nav li{
 }
 
 /*Main*/
-section{
-    margin: 150px 0;
-}
 
 /*----OurPlant---*/
 .plant-title{
@@ -150,8 +149,35 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
-
+/*--- Join ---*/
+.join{
+    background-image: url("../assets/news-letter-bg.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    height: 530px;
+}
+.join h5{
+    padding: 0;
+    margin: 0;
+}
+.join-title{
+    font-size: 3rem;
+    color: white;
+}
+.join-form button{
+    width: 130px;
+}
+.join-form input[type="email"]{
+    padding: 0 20px;
+    width: 640px;
+    height: 46px;
+    border: 1px solid white;
+}
 
 /*Small Device*/
 @media screen {
